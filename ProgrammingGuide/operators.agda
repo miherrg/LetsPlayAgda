@@ -1,5 +1,5 @@
-module operators where
-open import boolean
+module ProgrammingGuide.operators where
+open import ProgrammingGuide.boolean
 
 and_p : Bool → Bool → Bool
 and_p false false = false
