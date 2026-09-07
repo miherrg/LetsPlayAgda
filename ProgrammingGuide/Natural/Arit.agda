@@ -8,7 +8,8 @@ zero + b = b
 succ a + b = succ (a + b)
 
 twice : (x : ℕ) → ℕ
-twice x = x + x
+twice zero = zero
+twice (succ x) = succ (succ (twice x))
 
 half : (n : ℕ) → ℕ
 half zero = zero

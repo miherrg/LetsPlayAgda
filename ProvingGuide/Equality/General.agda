@@ -9,6 +9,9 @@ module ProvingGuide.Equality.General where
   cong : {A B : Set} {x y : A} → (f : A → B) → x ≡ y → f x ≡ f y
   cong f refl = refl
 
+  cong₂ : {A B C : Set} {x x' : A} {y y' : B} (f : A → B → C) → x ≡ x' → y ≡ y' → f x y ≡ f x' y'
+  cong₂ f refl refl = refl
+
   trans : {A : Set} {x y z : A} → x ≡ y → y ≡ z → x ≡ z
   trans {A} {x} {y} {z} refl refl = refl
 
