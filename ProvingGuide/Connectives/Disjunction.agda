@@ -22,4 +22,4 @@ module ProvingGuide.Connectives.Disjunction where
 
   or-map : {A A' B B' : Set} → (A → A') → (B → B') → A ∨ B → A' ∨ B'
   or-map p q (left x) = left (p x)
-  or-map p q (right x) = {!right (q x)!}
+  or-map p q (right x) = right (q x)
