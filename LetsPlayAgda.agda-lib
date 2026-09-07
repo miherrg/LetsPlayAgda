@@ -1,4 +1,3 @@
 name: LetsPlayAgda
 depend: standard-library
 include: .
-    /home/miherrg/.config/agda/agda-stdlib-2.4/standard-library.agda-lib
