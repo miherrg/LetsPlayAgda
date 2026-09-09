@@ -1,7 +1,7 @@
-module HigherOrder where
+module ProgrammingGuide.HigherOrder where
 
-open import boolean
-open import operators
+open import ProgrammingGuide.boolean
+open import ProgrammingGuide.operators
 
 is-tautology₁ : (Bool → Bool) → Bool
 is-tautology₁ f = (f true) and (f false)
