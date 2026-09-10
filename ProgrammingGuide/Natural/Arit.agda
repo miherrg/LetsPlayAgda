@@ -14,7 +14,7 @@ twice (succ x) = succ (succ (twice x))
 half : (n : ℕ) → ℕ
 half zero = zero
 half (succ zero) = zero
-half (succ (succ n)) = half n + 1
+half (succ (succ n)) = succ (half n)
 
 pred : ℕ → ℕ
 pred zero = zero

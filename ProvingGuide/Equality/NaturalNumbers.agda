@@ -68,7 +68,7 @@ module ProvingGuide.Equality.NaturalNumbers where
 
   even-twice : {n : ℕ} → Even n → n ≡ twice (half n)
   even-twice base-even = refl
-  even-twice (step-even p) = cong {!λ x → succ (succ x)!} (even-twice p)
+  even-twice (step-even p) = (cong (λ x → succ (succ x)) (even-twice p))
 
 
   add-comm' : (a b : ℕ) → a + b ≡ b + a
