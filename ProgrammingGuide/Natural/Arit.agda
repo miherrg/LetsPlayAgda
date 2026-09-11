@@ -43,7 +43,7 @@ a ^ succ b = a · a ^ b
 max : ℕ → ℕ → ℕ
 max zero b = b
 max a zero = a
-max (succ a) b = succ (max a (pred b))
+max (succ a) (succ b) = succ (max a b)
 
 example-computation : ℕ
 example-computation = max 13 5
